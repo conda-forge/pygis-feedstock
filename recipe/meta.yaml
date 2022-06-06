@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -26,21 +26,21 @@ requirements:
     - here-map-widget-for-jupyter
     - keplergl
     - leafmap >=0.9.3
-    - ipygany
+    # - ipygany
     - ipynb-py-convert
-    - ipyvtklink
-    - laspy
+    # - ipyvtklink
+    # - laspy
     - localtileserver >=0.5.8
     - netcdf4
     - osmnx
     - owslib
     - palettable
-    - panel
+    # - panel
     - plotly
     - pydeck
-    - pyntcloud
+    # - pyntcloud
     - python-mss
-    - pyvista
+    # - pyvista
     - rio-cogeo
     - rioxarray
     - voila
