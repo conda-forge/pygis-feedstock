@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.1.5" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: 599925a244f845a7c71c63211af8b854c7123c5b40cffaece09250ea370b574f
+  sha256: b41854c0ac6069f0f3bf5762d9f7cd0e2a59096a02bb8d8cdb6a84553dfe6b54
 
 build:
   noarch: python
@@ -19,15 +19,37 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - geemap
-    - leafmap
     - python >=3.7
+    - datapane
+    - geemap >=0.13.8
+    - geopandas
+    - here-map-widget-for-jupyter
+    - keplergl
+    - leafmap >=0.9.3
+    - ipygany
+    - ipynb-py-convert
+    - ipyvtklink
+    - laspy
+    - localtileserver >=0.5.8
+    - netcdf4
+    - osmnx
+    - owslib
+    - palettable
+    - panel
+    - plotly
+    - pydeck
+    - pyntcloud
+    - python-mss
+    - pyvista
+    - rio-cogeo
+    - rioxarray
+    - voila
 
 test:
   imports:
     - pygis
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
   requires:
     - pip
 
