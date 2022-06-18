@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -21,29 +21,30 @@ requirements:
   run:
     - python >=3.7
     - datapane
-    - geemap >=0.13.8
+    - geedim
+    - geemap >=0.14.0
     - geopandas
     - here-map-widget-for-jupyter
-    - keplergl
-    - leafmap >=0.9.3
-    # - ipygany
     - ipynb-py-convert
-    # - ipyvtklink
-    # - laspy
+    - keplergl
+    - leafmap >=0.9.4
     - localtileserver >=0.5.8
     - netcdf4
     - osmnx
     - owslib
     - palettable
-    # - panel
     - plotly
     - pydeck
-    # - pyntcloud
     - python-mss
-    # - pyvista
     - rio-cogeo
     - rioxarray
     - voila
+    # - ipygany
+    # - ipyvtklink
+    # - laspy
+    # - panel
+    # - pyntcloud
+    # - pyvista
 
 test:
   imports:
