@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - datapane
-    - geedim
+    - geedim >=1.2.0
     - geemap >=0.14.0
     - geopandas
     - here-map-widget-for-jupyter
