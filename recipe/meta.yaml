@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: a625bb208597820483f57c684873a196aaabdac12b65d6f8a8901fe22b4ee834
+  sha256: 446401a80617f4491ebe7c86c5164fff47ca9704019051868d210c07a34d7ae3
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -29,6 +29,7 @@ requirements:
     - keplergl
     - leafmap >=0.9.4
     - localtileserver >=0.5.8
+    - mapclassify >=2.4.0
     - netcdf4
     - osmnx
     - owslib
