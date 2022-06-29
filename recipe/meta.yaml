@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -37,6 +37,7 @@ requirements:
     - plotly
     - pydeck
     - python-mss
+    - retry
     - rio-cogeo
     - rioxarray
     - voila
