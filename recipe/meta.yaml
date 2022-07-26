@@ -43,7 +43,7 @@ requirements:
     - voila
     - ipython >=7.34.0
     - ipykernel >=6.15.1
-    - debugpy >=1.6.2
+    # - debugpy >=1.6.2
     # - ipygany
     # - ipyvtklink
     # - laspy
