@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: 446401a80617f4491ebe7c86c5164fff47ca9704019051868d210c07a34d7ae3
+  sha256: a3fb4008d4c8595a5a48cd74558abea64062a3bf15ad20fee5acd02854bbe611
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,13 +21,13 @@ requirements:
   run:
     - python >=3.7
     - datapane
-    - geedim >=1.2.0
-    - geemap >=0.14.0
+    - geedim >=1.3.2
+    - geemap >=0.15.5
     - geopandas
     - here-map-widget-for-jupyter
     - ipynb-py-convert
     - keplergl
-    - leafmap >=0.9.4
+    - leafmap >=0.10.3
     - localtileserver >=0.5.8
     - mapclassify >=2.4.0
     - netcdf4
@@ -41,6 +41,9 @@ requirements:
     - rio-cogeo
     - rioxarray
     - voila
+    - ipython >=7.34.0
+    - ipykernel >=6.15.1
+    # - debugpy >=1.6.2
     # - ipygany
     # - ipyvtklink
     # - laspy
