@@ -21,13 +21,13 @@ requirements:
   run:
     - python >=3.7
     - datapane
-    - geedim >=1.2.0
-    - geemap >=0.14.0
+    - geedim >=1.3.2
+    - geemap >=0.15.5
     - geopandas
     - here-map-widget-for-jupyter
     - ipynb-py-convert
     - keplergl
-    - leafmap >=0.9.4
+    - leafmap >=0.10.3
     - localtileserver >=0.5.8
     - mapclassify >=2.4.0
     - netcdf4
@@ -41,6 +41,9 @@ requirements:
     - rio-cogeo
     - rioxarray
     - voila
+    - ipython >=7.34.0
+    - ipykernel >=6.15.1
+    - debugpy >=1.6.2
     # - ipygany
     # - ipyvtklink
     # - laspy
