@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: 59025c748c7d0219a5b691f6e41f9df2a0f02732ddfcd930a37205655f214c1d
+  sha256: a13a3d1efed5c202fb20fa8c04ada07e1e6f10c8ef8e0ff6e9b16367ad53c164
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ requirements:
     - retry
     - rio-cogeo
     - rioxarray
-    
+
     # - voila
     # - ipython >=7.34.0
     # - ipykernel >=6.15.1
@@ -63,7 +63,7 @@ test:
 about:
   home: https://github.com/giswqs/pygis
   summary: A Python package for installing optional dependencies for geemap and leafmap.
-  description: A Python package for installing commonly used packages for geospatial analysis and data visualization with only one command. 
+  description: A Python package for installing commonly used packages for geospatial analysis and data visualization with only one command.
   license: MIT
   license_family: MIT
   license_file: LICENSE
