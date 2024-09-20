@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: 18e3cb0ac6ed94107e6ff9ef23c55899e70fac23827eb0b3383ecde3f3656780
+  sha256: 5f9616fcfcfa77f563453c79817690255f2315e533ec3abd4dc2cddbb1ec7936
 
 build:
   noarch: python
@@ -17,20 +17,22 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
+    - setuptools
   run:
-    - python >=3.8
+    - python >=3.9
     - bokeh
     - geedim >=1.6.1
-    - geemap >=0.32.1
+    - geemap >=0.34.2
     - geopandas
     - ipynb-py-convert
     - keplergl
-    - leafmap >=0.33.2
+    - leafmap >=0.37.5
     - localtileserver >=0.10.0
     - mapclassify >=2.4.0
     - netcdf4
     - osmnx
+    - overturemaps
     - owslib
     - palettable
     - plotly
@@ -60,14 +62,14 @@ test:
     - pip
 
 about:
-  home: https://github.com/giswqs/pygis
+  home: https://github.com/opengeos/pygis
   summary: A Python package for installing optional dependencies for geemap and leafmap.
   description: A Python package for installing commonly used packages for geospatial analysis and data visualization with only one command.
   license: MIT
   license_family: MIT
   license_file: LICENSE
   doc_url: https://pygis.gishub.org
-  dev_url: https://github.com/giswqs/pygis
+  dev_url: https://github.com/opengeos/pygis
 
 extra:
   recipe-maintainers:
