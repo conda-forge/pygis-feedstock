@@ -3,13 +3,13 @@ About pygis-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygis-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/giswqs/pygis
+Home: https://github.com/opengeos/pygis
 
 Package license: MIT
 
 Summary: A Python package for installing optional dependencies for geemap and leafmap.
 
-Development: https://github.com/giswqs/pygis
+Development: https://github.com/opengeos/pygis
 
 Documentation: https://pygis.gishub.org
 
