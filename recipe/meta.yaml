@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: 5f9616fcfcfa77f563453c79817690255f2315e533ec3abd4dc2cddbb1ec7936
+  sha256: efe1608700f3cb6ef4aa2cd780ed24be847c24452ab8003dcf2f0f5fd3c17be1
 
 build:
   noarch: python
@@ -36,7 +36,6 @@ requirements:
     - owslib
     - palettable
     - plotly
-    - pydeck
     - python-mss
     - retry
     - rio-cogeo
@@ -50,6 +49,7 @@ requirements:
     # - ipyvtklink
     # - laspy
     # - panel
+    # - pydeck
     # - pyntcloud
     # - pyvista
 
