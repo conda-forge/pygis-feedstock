@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.6.6" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: b56691c9de109e766461c5653ac63dbc0487964dd16ad81c829f5585b5438a69
+  sha256: b0c2a94da823962c4a8f2bafed0cd08b955cecadedd8dac6bd925951650a417c
 
 build:
   noarch: python
@@ -23,11 +23,11 @@ requirements:
     - python >=3.9
     - bokeh
     - geedim >=1.6.1
-    - geemap >=0.34.2
+    - geemap >=0.34.3
     - geopandas
     - ipynb-py-convert
     - keplergl
-    - leafmap >=0.37.5
+    - leafmap >=0.37.6
     - localtileserver >=0.10.0
     - mapclassify >=2.4.0
     - netcdf4
