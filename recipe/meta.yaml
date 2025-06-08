@@ -21,6 +21,10 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
+    - gdal
+    - geos
+    - proj
+    - pyproj
     - python-duckdb
     - earthaccess
     - ffmpeg-python
