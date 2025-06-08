@@ -32,7 +32,7 @@ requirements:
     - hypercoast
     - ipykernel
     - jupyter-server-proxy
-    - kaleido
+    - python-kaleido
     - leafmap
     - mapclassify
     - maplibre
