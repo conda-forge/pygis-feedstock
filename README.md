@@ -7,13 +7,13 @@ Home: https://github.com/opengeos/pygis
 
 Package license: MIT
 
-Summary: A Python package for installing optional dependencies for geemap and leafmap.
+Summary: A Python package for installing commonly used packages for GIS programming.
 
 Development: https://github.com/opengeos/pygis
 
 Documentation: https://pygis.gishub.org
 
-A Python package for installing commonly used packages for geospatial analysis and data visualization with only one command.
+A Python package for installing commonly used packages for GIS programming with only one command.
 
 Current build status
 ====================
