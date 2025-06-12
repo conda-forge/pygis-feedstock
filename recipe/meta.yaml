@@ -49,6 +49,7 @@ requirements:
     - pooch
     - py3dep
     - pyntcloud
+    - pyvista
     - rasterio
     - rioxarray
     - shapely
