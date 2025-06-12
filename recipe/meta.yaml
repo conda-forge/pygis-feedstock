@@ -48,6 +48,7 @@ requirements:
     - pmtiles
     - pooch
     - py3dep
+    - pyntcloud
     - rasterio
     - rioxarray
     - shapely
