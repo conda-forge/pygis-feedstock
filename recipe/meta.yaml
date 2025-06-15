@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: 8532eb764d5c41f004ca57378adb8c0245aebf578654a09eb20a0b8d5e3f1f51
+  sha256: b02db09eee7e22c176a46f71484ebf42586865a4731b411680546de699591ebb
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - geos
     - proj
     - pyproj
+    - bash_kernel
     - python-duckdb
     - duckdb-engine
     - earthaccess
