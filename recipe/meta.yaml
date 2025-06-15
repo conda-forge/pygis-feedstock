@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.9.5" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: 14ef267464dbad9ac3dbb57a16d8a2de32191c20ca60354da5be4afa97beef44
+  sha256: 8532eb764d5c41f004ca57378adb8c0245aebf578654a09eb20a0b8d5e3f1f51
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -26,6 +26,7 @@ requirements:
     - proj
     - pyproj
     - python-duckdb
+    - duckdb-engine
     - earthaccess
     - ffmpeg-python
     - fiona
@@ -35,6 +36,7 @@ requirements:
     - geopandas
     - hypercoast
     - ipykernel
+    - jupysql
     - jupyter-server-proxy
     - laspy
     - python-kaleido
