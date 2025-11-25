@@ -1,5 +1,5 @@
 {% set name = "pygis" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygis-{{ version }}.tar.gz
-  sha256: b02db09eee7e22c176a46f71484ebf42586865a4731b411680546de699591ebb
+  sha256: 31d07799be1e58be8f6728c35d877eec705df5bfe3f49188880d361a4e408109
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
